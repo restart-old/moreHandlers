@@ -3,16 +3,20 @@ module github.com/dragonfly-on-steroids/moreHandlers
 go 1.17
 
 require (
+	github.com/df-mc/dragonfly v0.4.3-0.20211207111742-73e9bd5104f5 // direct
+	github.com/go-gl/mathgl v1.0.0 // direct
+)
+
+require (
 	github.com/brentp/intintmap v0.0.0-20190211203843-30dc0ade9af9 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
-	github.com/df-mc/dragonfly v0.4.3-0.20211204224307-36fc1c2a9494 // direct
 	github.com/df-mc/goleveldb v1.1.9 // indirect
-	github.com/go-gl/mathgl v1.0.0 // direct
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.3 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
 	github.com/muhammadmuzzammil1998/jsonc v0.0.0-20201229145248-615b0916ca38 // indirect
+	github.com/pelletier/go-toml v1.9.3 // indirect
 	github.com/sandertv/go-raknet v1.10.2 // indirect
 	github.com/sandertv/gophertunnel v1.17.1 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect

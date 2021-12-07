@@ -50,6 +50,8 @@ github.com/df-mc/dragonfly v0.4.3-0.20211204211731-319e6e5d054c h1:P2u+hBx3yXKYW
 github.com/df-mc/dragonfly v0.4.3-0.20211204211731-319e6e5d054c/go.mod h1:saPioTIQPe/rDjVCbwkPie95qBuFilmreqZJM3HylOo=
 github.com/df-mc/dragonfly v0.4.3-0.20211204224307-36fc1c2a9494 h1:AEhpeGnHSTDtk9BM3v6DNxrb8+4VFv2o7qKH9cGVTgw=
 github.com/df-mc/dragonfly v0.4.3-0.20211204224307-36fc1c2a9494/go.mod h1:saPioTIQPe/rDjVCbwkPie95qBuFilmreqZJM3HylOo=
+github.com/df-mc/dragonfly v0.4.3-0.20211207111742-73e9bd5104f5 h1:Kj0wyBVY56mYXFMb8H9WJc0kdtZQLw2OH/r5KYQvxjY=
+github.com/df-mc/dragonfly v0.4.3-0.20211207111742-73e9bd5104f5/go.mod h1:saPioTIQPe/rDjVCbwkPie95qBuFilmreqZJM3HylOo=
 github.com/df-mc/goleveldb v1.1.9 h1:ihdosZyy5jkQKrxucTQmN90jq/2lUwQnJZjIYIC/9YU=
 github.com/df-mc/goleveldb v1.1.9/go.mod h1:+NHCup03Sci5q84APIA21z3iPZCuk6m6ABtg4nANCSk=
 github.com/envoyproxy/go-control-plane v0.9.0/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
