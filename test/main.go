@@ -20,7 +20,7 @@ func main() {
 		}
 		handler2 := &testHandler2{p: p}
 		handler1 := &testHandler1{p: p}
-		h := moreHandlers.New(handler1, handler2)
+		h := moreHandlers.NewPlayerHandler(handler1, handler2)
 		p.Handle(h)
 		go func() {
 			time.Sleep(5 * time.Second)
