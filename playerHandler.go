@@ -126,9 +126,9 @@ func (h *PlayerHandler) HandleItemUseOnEntity(ctx *event.Context, e world.Entity
 		handler.HandleItemUseOnEntity(ctx, e)
 	}
 }
-func (h *PlayerHandler) HandleAttackEntity(ctx *event.Context, e world.Entity, force, height *float64) {
+func (h *PlayerHandler) HandleAttackEntity(ctx *event.Context, e world.Entity, force, height *float64, critical *bool) {
 	for _, handler := range h.handlers {
-		handler.HandleAttackEntity(ctx, e, force, height)
+		handler.HandleAttackEntity(ctx, e, force, height, critical)
 	}
 }
 func (h *PlayerHandler) HandlePunchAir(ctx *event.Context) {
