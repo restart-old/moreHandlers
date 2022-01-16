@@ -36,6 +36,12 @@ type PlayerHandler struct {
 	handlers []PlayerCHandler
 }
 
+func (h *PlayerHandler) HandleChangeWorld(before, after *world.World) {
+	for _, handler := range h.handlers {
+		handler.HandleChangeWorld(before, after)
+	}
+}
+
 func (h *PlayerHandler) HandleMove(ctx *event.Context, newPos mgl64.Vec3, newYaw, newPitch float64) {
 	for _, handler := range h.handlers {
 		handler.HandleMove(ctx, newPos, newYaw, newPitch)

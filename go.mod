@@ -3,7 +3,7 @@ module github.com/df-plus/moreHandlers
 go 1.17
 
 require (
-	github.com/df-mc/dragonfly v0.5.2-0.20220109181251-135829d473dd // direct
+	github.com/df-mc/dragonfly v0.5.2-0.20220116174417-8fe3698011f1 // direct
 	github.com/go-gl/mathgl v1.0.0 // direct
 )
 
@@ -15,7 +15,7 @@ require (
 	github.com/klauspost/compress v1.13.6 // indirect
 	github.com/muhammadmuzzammil1998/jsonc v0.0.0-20201229145248-615b0916ca38 // indirect
 	github.com/sandertv/go-raknet v1.10.2 // indirect
-	github.com/sandertv/gophertunnel v1.18.1 // indirect
+	github.com/sandertv/gophertunnel v1.18.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97 // indirect
 	golang.org/x/image v0.0.0-20210628002857-a66eb6448b8d // indirect
