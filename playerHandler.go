@@ -36,6 +36,12 @@ type PlayerHandler struct {
 	handlers []PlayerCHandler
 }
 
+func (h *PlayerHandler) HandleJump() {
+	for _, handler := range h.handlers {
+		handler.HandleJump()
+	}
+}
+
 func (h *PlayerHandler) HandleChangeWorld(before, after *world.World) {
 	for _, handler := range h.handlers {
 		handler.HandleChangeWorld(before, after)
