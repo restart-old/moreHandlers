@@ -93,9 +93,9 @@ func (h *PlayerHandler) HandleDeath(src damage.Source) {
 		handler.HandleDeath(src)
 	}
 }
-func (h *PlayerHandler) HandleRespawn(pos *mgl64.Vec3) {
+func (h *PlayerHandler) HandleRespawn(pos *mgl64.Vec3, w **world.World) {
 	for _, handler := range h.handlers {
-		handler.HandleRespawn(pos)
+		handler.HandleRespawn(pos, w)
 	}
 }
 func (h *PlayerHandler) HandleSkinChange(ctx *event.Context, skin skin.Skin) {
