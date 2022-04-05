@@ -104,7 +104,7 @@ func (h *PlayerHandler) HandleRespawn(pos *mgl64.Vec3, w **world.World) {
 		handler.HandleRespawn(pos, w)
 	}
 }
-func (h *PlayerHandler) HandleSkinChange(ctx *event.Context, *skin skin.Skin) {
+func (h *PlayerHandler) HandleSkinChange(ctx *event.Context, skin *skin.Skin) {
 	for _, handler := range h.handlers {
 		handler.HandleSkinChange(ctx, skin)
 	}
