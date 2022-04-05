@@ -36,6 +36,12 @@ type PlayerHandler struct {
 	handlers []PlayerCHandler
 }
 
+func (h *PlayerHandler) HandleItemConsume(ctx *event.Context, item item.Stack) {
+	for _, handler := range h.handlers {
+		handler.HandleItemConsume(ctx, item)
+	}
+}
+
 func (h *PlayerHandler) HandleJump() {
 	for _, handler := range h.handlers {
 		handler.HandleJump()
