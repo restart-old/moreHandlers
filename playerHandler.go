@@ -2,6 +2,7 @@ package moreHandlers
 
 import (
 	"net"
+	"time"
 
 	"github.com/df-mc/dragonfly/server/block/cube"
 	"github.com/df-mc/dragonfly/server/cmd"
@@ -89,9 +90,9 @@ func (h *PlayerHandler) HandleHeal(ctx *event.Context, health *float64, src heal
 		handler.HandleHeal(ctx, health, src)
 	}
 }
-func (h *PlayerHandler) HandleHurt(ctx *event.Context, damage *float64, src damage.Source) {
+func (h *PlayerHandler) HandleHurt(ctx *event.Context, damage *float64, attackImmunity *time.Duration, src damage.Source) {
 	for _, handler := range h.handlers {
-		handler.HandleHurt(ctx, damage, src)
+		handler.HandleHurt(ctx, damage, attackImmunity, src)
 	}
 }
 func (h *PlayerHandler) HandleDeath(src damage.Source) {
